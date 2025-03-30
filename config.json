@@ -1,0 +1,12 @@
+{
+  "00:11:22:33:44:55": {
+    "name": "ExampleAP",
+    "time": "12:00",
+    "days": ["monday", "wednesday", "friday"]
+  },
+  "66:77:88:99:AA:BB": {
+    "name": "AnotherAP",
+    "time": "18:30",
+    "days": ["tuesday", "thursday"]
+  }
+}

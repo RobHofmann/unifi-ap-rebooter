@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  unifi-ap-rebooter:
+    image: robhofmann/unifi-ap-rebooter:latest
+    container_name: unifi-ap-rebooter
+    environment:
+      - REBOOT_CONFIG_PATH=/config/config.json
+      - UNIFI_CONTROLLER_URL=https://unifi.example.com
+      - UNIFI_CONTROLLER_USER=YourUsername
+      - UNIFI_CONTROLLER_PASSWORD=YourPassword
+      - IGNORE_SSL_ERRORS=true
+    volumes:
+      - /path/to/your/config:/config
+    restart: always
